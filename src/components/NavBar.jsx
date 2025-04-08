@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
+import './NavBar.css';
+import { AiFillHome } from 'react-icons/ai';
 
 const NavBar = () => {
   return (
-    <nav>
-        <h2><Link to={`/`}>Home</Link></h2>
+    <nav className="navbar">
+        <h2>
+          <Link to={`/`}>
+            <AiFillHome />
+          </Link>
+        </h2>
         <ul>
             <li><Link to={`/sobremim`}>Sobre Mim</Link></li>
             <li><Link to={`/habilidades`}>Habilidades</Link></li>

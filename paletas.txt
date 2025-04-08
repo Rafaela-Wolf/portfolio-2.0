@@ -1,0 +1,40 @@
+Raleway em destaque + Nunito para leitura
+
+💎 1. Moderna & Elegante (profissional, tech e refinada)
+Ideal pra transmitir seriedade com um toque de sofisticação.
+
+Background: #F5F7FA (cinza bem clarinho)
+
+Primária: #2F80ED (azul moderno)
+
+Secundária: #56CCF2 (azul mais claro, pra contrastes/sombras)
+
+Texto: #333333 (cinza escuro)
+
+Destaques: #27AE60 (verde elegante, perfeito pra botões ou tags)
+
+🍑 2. Criativa & Aconchegante (friendly, designer, original)
+Perfeita pra mostrar personalidade e criatividade sem poluir.
+
+Background: #FFF8F0 (quase creme)
+
+Primária: #FF7A59 (laranja queimado)
+
+Secundária: #FFD07A (amarelo pastel)
+
+Texto: #3A3A3A (grafite)
+
+Destaques: #6A67CE (lavanda vibrante)
+
+🌌 3. Dark Minimalista (futurista, elegante, night mode lovers)
+Pra quem gosta de uma pegada mais dark e moderna.
+
+Background: #121212
+
+Primária: #BB86FC (roxo neonzinho)
+
+Secundária: #03DAC5 (ciano moderno)
+
+Texto: #E0E0E0 (cinza claro)
+
+Destaques: #F50057 (rosa choque, pra CTAs)
