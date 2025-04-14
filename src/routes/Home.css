@@ -1,3 +1,76 @@
 .home {
-    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.home h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+}
+
+.home .titulo {
+    font-weight: 500;
+    color: #F5F7FA;
+}
+
+.home .title {
+    color: transparent;
+    -webkit-text-stroke: 2px #F5F7FA;
+}
+
+.titulo-rolante,
+.animated-title {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bolinha-cheia {
+    font-size: 0.6em;
+    vertical-align: middle;
+    color: white;
+    margin: 0 20px;
+}
+
+.bolinha-vazia {
+    font-size: 0.6em;
+    vertical-align: middle;
+    color: transparent;
+    border: #F5F7FA;
+    margin: 0 20px;
+}
+
+/* ANIMAÇÕES DE ROLAMENTO */
+.titulo-rolante {
+    animation: rolarTexto 23s linear infinite;
+}
+
+.animated-title {
+    animation: scrollText 23s linear infinite;
+}
+
+@keyframes rolarTexto {
+    0% {
+        transform: translateX(100%);
+        /* Começa fora da tela à direita */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Termina fora da tela à esquerda */
+    }
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(-100%);
+        /* Começa fora da tela à direita */
+    }
+
+    100% {
+        transform: translateX(100%);
+        /* Termina fora da tela à esquerda */
+    }
 }

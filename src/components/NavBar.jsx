@@ -11,9 +11,9 @@ const NavBar = () => {
           </Link>
         </h2>
         <ul>
-            <li><Link to={`/sobremim`}>Sobre Mim</Link></li>
+            <li><Link to={`/sobremim`}>Sobre</Link></li>
             <li><Link to={`/habilidades`}>Habilidades</Link></li>
-            <li><Link to={`/meusprojetos`}>Meus Projetos</Link></li>
+            <li><Link to={`/meusprojetos`}>Projetos</Link></li>
         </ul>
     </nav>
   )
