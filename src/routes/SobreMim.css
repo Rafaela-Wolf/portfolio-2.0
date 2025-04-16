@@ -1,0 +1,19 @@
+.sobre-mim {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.sobre-mim>h1,
+.sobre-mim>.btn {
+    grid-column: 1 / -1;
+}
+
+.sobre-mim h1 {
+    text-align: center;
+    color: #F5F7FA;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding-top: 15px;
+    font-size: 30px;
+}

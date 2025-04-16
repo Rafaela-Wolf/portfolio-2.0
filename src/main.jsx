@@ -9,6 +9,7 @@ import Home from './routes/Home.jsx';
 import SobreMim from './routes/SobreMim.jsx';
 import Habilidades from './routes/Habilidades.jsx';
 import MeusProjetos from './routes/MeusProjetos.jsx';
+import Contato from './routes/Contato.jsx';
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         {
           path: '/meusprojetos',
           element: <MeusProjetos />
+        },
+        {
+          path: '/contato',
+          element: <Contato />
         },
       ]
     }

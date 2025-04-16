@@ -1,76 +1,92 @@
 .home {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 200px;
+    margin-top: 100px;
+    width: 70%;
 }
 
-.home h1 {
+.home h2,
+.home .nome,
+.home .frase {
     font-family: 'Raleway', sans-serif;
-    font-size: 70px;
 }
 
-.home .titulo {
-    font-weight: 500;
-    color: #F5F7FA;
+.home h2 {
+    color: #4cc8b2;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.home .title {
-    color: transparent;
-    -webkit-text-stroke: 2px #F5F7FA;
+.home .nome {
+    color: #CCD8F8;
+    font-size: 60px;
+    font-weight: 600;
 }
 
-.titulo-rolante,
-.animated-title {
-    white-space: nowrap;
-    overflow: hidden;
+.home .frase {
+    font-size: 40px;
+    font-weight: 600;
 }
 
-.bolinha-cheia {
-    font-size: 0.6em;
-    vertical-align: middle;
-    color: white;
-    margin: 0 20px;
+.home .frase,
+.home div p {
+    color: #8892B0;
 }
 
-.bolinha-vazia {
-    font-size: 0.6em;
-    vertical-align: middle;
-    color: transparent;
-    border: #F5F7FA;
-    margin: 0 20px;
+.home div {
+    max-width: 60%;
 }
 
-/* ANIMAÇÕES DE ROLAMENTO */
-.titulo-rolante {
-    animation: rolarTexto 23s linear infinite;
+.home div p {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 600;
 }
 
-.animated-title {
-    animation: scrollText 23s linear infinite;
-}
+/* Responsivo */
 
-@keyframes rolarTexto {
-    0% {
-        transform: translateX(100%);
-        /* Começa fora da tela à direita */
-    }
-
-    100% {
-        transform: translateX(-100%);
-        /* Termina fora da tela à esquerda */
+@media(max-width: 900px) {
+    .home {
+        margin-top: 40px;
+        margin-left: 50px;
     }
 }
 
-@keyframes scrollText {
-    0% {
-        transform: translateX(-100%);
-        /* Começa fora da tela à direita */
+@media(max-width: 768px) {
+    .home {
+        width: 90%;
     }
 
-    100% {
-        transform: translateX(100%);
-        /* Termina fora da tela à esquerda */
+    .home .nome {
+        font-size: 50px;
+    }
+    
+    .home .frase {
+        font-size: 30px;
+    }
+
+    .home div {
+        max-width: 90%;
+    }
+}
+
+@media(max-width: 500px) {
+    .home {
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .home .nome {
+        font-size: 30px;
+    }
+    
+    .home .frase {
+        font-size: 20px;
     }
 }
