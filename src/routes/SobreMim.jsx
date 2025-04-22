@@ -1,33 +1,17 @@
-import { FaBolt } from 'react-icons/fa6';
 import './SobreMim.css';
+import imgPerfil from '../assets/images/perfil.jpg';
 
 const SobreMim = () => {
   return (
     <div className='sobre-mim'>
-      <h1>A cada linha de código, uma nova solução.</h1>
-
-      <div className='atividades'>
-        <p> São mais de 212 dias de experiência em desenvolvimento de software e engenharia web, com fortes habilidades em arquitetura de sistemas, integração de APIs e otimização de aplicações. Conhecimento nas seguintes atividades:</p>
-        <ul class="lista-atividades">
-          <li><FaBolt /> Desenvolvimento e manutenção de aplicações web escaláveis;</li>
-          <li><FaBolt /> Implementação de APIs e microsserviços eficientes;</li>
-          <li><FaBolt /> Testes e validações para garantir qualidade e performance;</li>
-          <li><FaBolt /> Automação de processos para aumentar produtividade;</li>
-          <li><FaBolt /> Gestão e otimização de bancos de dados;</li>
-          <li><FaBolt /> Documentação técnica para garantir continuidade dos projetos.</li>
-        </ul>
+      <div className="img">
+        <img src={imgPerfil} alt="Foto de perfil na página sobre mim" />
       </div>
 
-      <div className='principais-resultados'>
-        <h3>Principais resultados</h3>
-        <ul class="resultados">
-          <li>Redução do tempo de resposta da API em 40% com otimizações estratégicas;</li>
-          <li> Diminuição de bugs críticos em 60% por meio de testes automatizados;</li>
-          <li>Aumento da produtividade da equipe em 25% com automação de processos internos;</li>
-          <li> Otimização de consultas SQL, reduzindo o tempo de execução em 50%;</li>
-          <li>Desenvolvimento de features que impactaram diretamente a experiência do usuário final;</li>
-          <li>Contribuição ativa na refatoração de código, reduzindo redundâncias e melhorando a escalabilidade.</li>
-        </ul>
+      <div className="texto-sobre-mim">
+        <p>Entusiasta desenvolvedora Full Stack, meu nome é Rafaela Wolf e encontro grande satisfação em transformar ideias inovadoras em soluções digitais concretas. A programação me fascina como a montagem de um quebra-cabeça complexo, onde cada linha de código é essencial. Essa paixão me impulsionou a aprofundar meus conhecimentos através de uma pós-graduação em Desenvolvimento Full Stack, complementando minha formação e projetos pessoais.</p>
+        <br />
+        <p>Sou movida pela busca contínua por aprendizado e pela concretização de projetos eficientes e impactantes. Minha experiência abrange trabalho em equipe, metodologias ágeis como Scrum e a vasta gama de serviços AWS. Valorizo a comunicação aberta, a colaboração e acredito que a tecnologia deve servir às pessoas. Com proficiência em inglês e aprimorando minhas habilidades na pós-graduação, estou pronta para aplicar minha energia e expertise em projetos desafiadores e significativos.</p>
       </div>
     </div>
   )
