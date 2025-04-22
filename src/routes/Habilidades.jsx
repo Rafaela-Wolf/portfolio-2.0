@@ -14,7 +14,8 @@ import {
   FaDatabase,
   FaCogs,
   FaCloud,
-  FaProjectDiagram
+  FaProjectDiagram,
+  FaDotCircle
 } from 'react-icons/fa';
 
 const skills = [
@@ -52,19 +53,18 @@ const skills = [
 const Habilidades = () => {
   return (
     <div className="habilidades">
-      <p>São mais de 2 anos de experiência em desenvolvimento de software e engenharia web, com fortes habilidades em arquitetura de sistemas, integração de APIs e otimização de aplicações.</p>
+      <p className="frase">São mais de 2 anos de experiência em desenvolvimento de software e engenharia web, com fortes habilidades em arquitetura de sistemas, integração de APIs e otimização de aplicações.</p>
 
-      <p>Conhecimento nas seguintes atividades:</p>
+      <p className="atividades-e-tecnologias">Conhecimento nas seguintes atividades e tecnologias:</p>
       <ul>
-        <li>Desenvolvimento e manutenção de aplicações web escaláveis;</li>
-        <li>Implementação de APIs e microsserviços eficientes;</li>
-        <li>Testes e validações para garantir qualidade e performance;</li>
-        <li>Automação de processos para aumentar produtividade;</li>
-        <li>Gestão e otimização de bancos de dados;</li>
-        <li>Documentação técnica para garantir continuidade dos projetos.</li>
+        <li><FaDotCircle /> <span>Desenvolvimento e manutenção de aplicações web escaláveis;</span></li>
+        <li><FaDotCircle /> <span>Implementação de APIs e microsserviços eficientes;</span></li>
+        <li><FaDotCircle /> <span>Testes e validações para garantir qualidade e performance;</span></li>
+        <li><FaDotCircle /> <span>Automação de processos para aumentar produtividade;</span></li>
+        <li><FaDotCircle /> <span>Gestão e otimização de bancos de dados;</span></li>
+        <li><FaDotCircle /> <span>Documentação técnica para garantir continuidade dos projetos.</span></li>
       </ul>
 
-      <p>Tenho conhecimento das tecnologias:</p>
       <div className="skills">
         {skills.map((skill, index) => (
           <div key={index} className="skill-item">
