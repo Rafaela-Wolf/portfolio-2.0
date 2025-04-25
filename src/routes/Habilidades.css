@@ -32,6 +32,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     line-height: 1.5;
 }
 
@@ -62,7 +63,6 @@
     flex-direction: column;
     align-items: center;
     color: #4cc8b2;
-    font-size: 20px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -79,4 +79,96 @@
     color: #8892B0;
     font-size: 20px;
     font-weight: 600;
+}
+
+/* Responsivo */
+
+@media(max-width: 768px) {
+    .habilidades {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .habilidades .frase,
+    .habilidades .atividades-e-tecnologias {
+        font-size: 18px;
+    }
+
+    .habilidades .frase {
+        padding: 12px 0;
+    }
+
+    .habilidades ul li span {
+        font-size: 18px;
+    }
+
+    .habilidades .skills {
+        padding-top: 15px;
+    }
+
+    .habilidades .skills .skill-item .skill-icon {
+        font-size: 24px;
+    }
+
+    .habilidades .skills .skill-item .skill-name {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 549px) {
+    .habilidades .frase,
+    .habilidades .atividades-e-tecnologias {
+        font-size: 16px;
+    }
+
+    .habilidades ul li span {
+        font-size: 16px;
+    }
+
+    .habilidades .skills {
+        gap: 15px;
+    }
+
+    .habilidades .skills .skill-item .skill-icon {
+        font-size: 20px;
+    }
+
+    .habilidades .skills .skill-item .skill-name {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 425px) {
+    .habilidades {
+        padding: 12px;
+    }
+
+    .habilidades .frase,
+    .habilidades .atividades-e-tecnologias,
+    .habilidades .skills .skill-item .skill-icon,
+    .habilidades .skills .skill-item .skill-name {
+        font-size: 14px;
+    }
+
+    .habilidades .frase {
+        padding: 10px 0;
+    }
+
+    .habilidades ul li span {
+        font-size: 14px;
+    }
+
+    .habilidades .skills {
+        padding-top: 10px;
+    }
+
+    .habilidades .skills .skill-item:hover {
+        transform: scale(1.08);
+    }
+}
+
+@media(max-width: 393px) {
+    .habilidades .skills {
+        gap: 12px;
+    }
 }

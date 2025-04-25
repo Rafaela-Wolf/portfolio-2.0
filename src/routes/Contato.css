@@ -35,6 +35,7 @@
     justify-content: center;
     gap: 25px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .contato .redes-sociais svg {
@@ -48,6 +49,50 @@
     transform: scale(1.1);
 }
 
+/* Modal do gmail */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal {
+    background-color: #8892B0;
+    padding: 20px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #CCD8F8;
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #CCD8F8;
+    transition: color 0.3s ease;
+}
+
+.modal .close:hover {
+    color: #ff6b6b;
+}
+
 @media (max-width: 768px) {
     .contato h1 {
         font-size: 26px;
@@ -59,5 +104,11 @@
 
     .contato .redes-sociais a {
         font-size: 28px;
+    }
+}
+
+@media(max-width: 425px) {
+    .modal p {
+        font-size: 16px;
     }
 }

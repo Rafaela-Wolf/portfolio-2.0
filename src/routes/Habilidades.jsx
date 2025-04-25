@@ -1,22 +1,5 @@
 import './Habilidades.css';
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaGitAlt,
-  FaGithub,
-  FaNodeJs,
-  FaDocker,
-  FaAws,
-  FaPython,
-  FaJava,
-  FaDatabase,
-  FaCogs,
-  FaCloud,
-  FaProjectDiagram,
-  FaDotCircle
-} from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub, FaNodeJs, FaDocker, FaAws, FaPython, FaJava,FaDatabase, FaCogs, FaCloud, FaProjectDiagram, FaBolt } from 'react-icons/fa';
 
 const skills = [
   { name: "HTML", icon: <FaHtml5 /> },
@@ -57,12 +40,12 @@ const Habilidades = () => {
 
       <p className="atividades-e-tecnologias">Conhecimento nas seguintes atividades e tecnologias:</p>
       <ul>
-        <li><FaDotCircle /> <span>Desenvolvimento e manutenção de aplicações web escaláveis;</span></li>
-        <li><FaDotCircle /> <span>Implementação de APIs e microsserviços eficientes;</span></li>
-        <li><FaDotCircle /> <span>Testes e validações para garantir qualidade e performance;</span></li>
-        <li><FaDotCircle /> <span>Automação de processos para aumentar produtividade;</span></li>
-        <li><FaDotCircle /> <span>Gestão e otimização de bancos de dados;</span></li>
-        <li><FaDotCircle /> <span>Documentação técnica para garantir continuidade dos projetos.</span></li>
+        <li><FaBolt /> <span>Desenvolvimento e manutenção de aplicações web escaláveis;</span></li>
+        <li><FaBolt /> <span>Implementação de APIs e microsserviços eficientes;</span></li>
+        <li><FaBolt /> <span>Testes e validações para garantir qualidade e performance;</span></li>
+        <li><FaBolt /> <span>Automação de processos para aumentar produtividade;</span></li>
+        <li><FaBolt /> <span>Gestão e otimização de bancos de dados;</span></li>
+        <li><FaBolt /> <span>Documentação técnica para garantir continuidade dos projetos.</span></li>
       </ul>
 
       <div className="skills">
